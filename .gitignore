@@ -1,34 +1,36 @@
-# Gradle files
+# --- FICHIERS SYSTÈME ET IDE ---
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+capture/
+*.hprof
+
+# --- FRONTEND (ANDROID - NOUHA) ---
+# On ignore les dossiers de compilation d'Android
 .gradle/
 build/
-
-# Local configuration file (sdk path, etc)
 local.properties
-
-# Log/OS Files
-*.log
-
-# Android Studio generated files and folders
-captures/
 .externalNativeBuild/
 .cxx/
 *.aab
 *.apk
 output-metadata.json
-
-# IntelliJ
-*.iml
-.idea/
+# Fichiers de configuration spécifiques à l'utilisateur
 misc.xml
 deploymentTargetDropDown.xml
 render.experimental.xml
-
-# Keystore files
+google-services.json
 *.jks
 *.keystore
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
+# --- BACKEND (SPRING BOOT - RABAB) ---
+# On ignore les dossiers de compilation Maven
+target/
+*.log
+.mvn/
+mvnw
+mvnw.cmd
 
-# Android Profiling
-*.hprof
+# --- SÉCURITÉ ---
+.env
