@@ -10,7 +10,7 @@ L'objectif est de simplifier l'interaction entre les patients, les médecins et 
 ---
 
 ##  Notre Équipe
-* **Chef de Projet / Intégrateur :** [Ton Nom]
+* **Chef de Projet / Intégrateur :** Amine
 * **Développeuse Backend :** Rabab
 * **Développeuse Frontend :** Nouha
 * **Documentation & QA :** Zouhair
