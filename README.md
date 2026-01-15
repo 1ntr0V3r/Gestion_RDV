@@ -1,64 +1,49 @@
-# Gestion_RDV
-Projet MedAppoint (Android Native)
-# MedAppoint - Gestion de Cabinet Médical 🏥
+MedAppoint - Système de Gestion Médicale Full-Stack
+Présentation du Projet
+MedAppoint est une solution numérique intégrée (Mobile + API) permettant de digitaliser la prise de rendez-vous médicaux. Ce projet repose sur une architecture client-serveur moderne où chaque membre de l'équipe a contribué de manière transversale à l'ensemble de la chaîne de développement.
 
-##  Présentation du Projet
-MedAppoint est une application mobile Android permettant de digitaliser la prise de rendez-vous médicaux. Ce projet est réalisé dans le cadre de notre examen de fin d'études.
+Notre Équipe (Full-Stack Developers)
+Nous avons adopté une méthode de travail agile où chaque développeur a participé à la fois au Frontend, au Backend et à la Gestion des Données :
 
-L'objectif est de simplifier l'interaction entre les patients, les médecins et le personnel administratif (secrétariat).
+Amine : Développeur Full-Stack & Architecture Système.
 
----
+Rabab : Développeuse Full-Stack & Conception API.
 
-##  Notre Équipe
-* **Chef de Projet / Intégrateur :** Amine
-* **Développeuse Backend :** Rabab
-* **Développeuse Frontend :** Nouha
-* **Documentation & QA :** Zouhair
+Nouha : Développeuse Full-Stack & UI/UX Design.
 
----
+Zouhair : Développeur Full-Stack & Qualité Logicielle.
 
-##  Fonctionnalités Principales
+Stack Technique
+Frontend Mobile : Android Natif (Java) avec Retrofit 2 pour une communication fluide avec le serveur.
 
-###  Espace Patient
-* Inscription et connexion sécurisée.
-* Recherche de médecins et prise de rendez-vous (Consultation/Suivi).
-* Historique des rendez-vous et notifications.
+Backend API : Spring Boot 3 (Java) assurant la logique métier et la sécurité des données.
 
-###  Espace Médecin
-* Consultation du planning quotidien.
-* Gestion des disponibilités (créneaux horaires).
-* Annulation ou modification de rendez-vous.
+Base de Données : PostgreSQL géré via Docker pour garantir un environnement de développement stable et isolé.
 
-###  Espace Admin (Secrétaire)
-* Dashboard global de l'activité.
-* Gestion des comptes utilisateurs et des plannings.
+Outils Pro : IntelliJ IDEA (Backend) et Android Studio (Frontend).
 
----
+Installation Rapide
+1. Préparation de la Base (Docker)
+Lancez Docker Desktop, puis exécutez la commande suivante à la racine :
 
-##  Stack Technique
+Bash
 
-### Backend
-* **Framework :** Spring Boot 3
-* **Langage :** Java 17+
-* **Sécurité :** Spring Security & JWT (JSON Web Token)
-* **Base de données :** PostgreSQL
+docker-compose up -d
+2. Lancement du Serveur (IntelliJ IDEA)
+Ouvrez le projet /backend dans IntelliJ IDEA.
 
-### Frontend (Mobile)
-* **Plateforme :** Android Natif
-* **Langage :** Java
-* **Réseau :** Retrofit 2 (Appels API)
-* **Design :** XML Layouts (Material Design)
+Le serveur se connectera automatiquement à PostgreSQL sur le port 5432.
 
----
+Exécutez MedAppointBackendApplication.java.
 
-##  Structure du Dépôt
-* `/backend` : Code source de l'API Spring Boot.
-* `/frontend` : Code source de l'application Android Studio.
-* `/docs` : Rapports techniques et schémas de base de données.
+3. Lancement du Mobile (Android Studio)
+Ouvrez le projet /app dans Android Studio.
 
----
+Assurez-vous que l'adresse IP du serveur est correctement configurée pour l'émulateur (10.0.2.2).
 
-##  Installation (Développement)
-1. **Cloner le projet :** `git clone [URL-DU-REPO]`
-2. **Backend :** Configurer la base de données PostgreSQL et lancer l'application via Maven.
-3. **Frontend :** Ouvrir le dossier `frontend` dans Android Studio, synchroniser Gradle et lancer sur émulateur.
+Identifiants de Démo
+Admin : admin@test.com / admin123
+
+Médecin : doctor@test.com / doc123
+
+Patient : patient@test.com / pat123
